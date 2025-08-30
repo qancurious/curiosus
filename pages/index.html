@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Curiosus | Discord Bot</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+		<link rel="stylesheet" href="../styles/common.css" />
+		<link rel="stylesheet" href="../styles/hero.css" />
+		<link rel="stylesheet" href="../styles/features.css" />
+		<link rel="stylesheet" href="../styles/commands.css" />
+		<link rel="stylesheet" href="../styles/stats.css" />
+		<link rel="stylesheet" href="../styles/cta.css" />
+		<link rel="stylesheet" href="../styles/footer.css" />
+
+		<link rel="shortcut icon" href="../images/curiosus_star.png" type="image/png" />
+
+		<meta name="theme-color" content="#5865F2" />
+	</head>
+	<body>
+		<div class="particles" id="particles"></div>
+		<div class="mobile-menu-toggle">
+			<i class="fas fa-bars"></i>
+		</div>
+		<nav>
+			<div class="nav-container">
+				<div class="logo"><i class="fab fa-discord"></i> Curiosus</div>
+				<ul class="nav-links">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#features">Features</a></li>
+					<li><a href="#commands">Commands</a></li>
+					<li><a href="#support">Support</a></li>
+				</ul>
+				<a href="#" class="cta-button glow-on-hover" onclick="inviteBot()">Invite Bot</a>
+			</div>
+		</nav>
+
+		<section id="home" class="hero">
+			<div class="hero-content fade-in-up">
+				<h1>Curiosus</h1>
+				<p>Enhance your Discord server with moderation tools, utility commands, and more. Let the bot help you improve your server.</p>
+				<div class="hero-buttons">
+					<a href="#" class="btn-primary glow-on-hover" onclick="inviteBot()"> <i class="fas fa-plus"></i> Add to Discord </a>
+					<a href="#features" class="btn-secondary glow-on-hover"> <i class="fas fa-info-circle"></i> Learn More </a>
+				</div>
+			</div>
+		</section>
+
+		<section id="features" class="features">
+			<div class="container">
+				<h2 class="section-title">Features</h2>
+				<div class="features-grid">
+					<div class="feature-card fade-in-up">
+						<div class="feature-icon">
+							<i class="fas fa-shield-alt"></i>
+						</div>
+						<h3>Moderation</h3>
+						<p>Keep your server safe with powerful moderation tools including auto-moderation, warning systems, and role management.</p>
+					</div>
+					<!-- <div class="feature-card fade-in-up">
+						<div class="feature-icon">
+							<i class="fas fa-music"></i>
+						</div>
+						<h3>Music Player</h3>
+						<p>High-quality music streaming from YouTube, Spotify, and more. Create playlists and enjoy music with your friends.</p>
+					</div> -->
+					<!-- <div class="feature-card fade-in-up">
+						<div class="feature-icon">
+							<i class="fas fa-gamepad"></i>
+						</div>
+						<h3>Entertainment</h3>
+						<p>Engage your community with interactive games like trivia, word games, and mini-games to keep everyone entertained.</p>
+					</div> -->
+					<!-- <div class="feature-card fade-in-up">
+						<div class="feature-icon">
+							<i class="fas fa-chart-line"></i>
+						</div>
+						<h3>Analytics</h3>
+						<p>Track your server's growth with detailed analytics, member statistics, and activity reports.</p>
+					</div> -->
+					<div class="feature-card fade-in-up">
+						<div class="feature-icon">
+							<i class="fas fa-cog"></i>
+						</div>
+						<h3>Easy Setup</h3>
+						<p>Simple and intuitive setup process. Get your bot running in minutes with our step-by-step guide.</p>
+					</div>
+					<div class="feature-card fade-in-up">
+						<div class="feature-icon">
+							<i class="fas fa-headset"></i>
+						</div>
+						<h3>Support</h3>
+						<p>Get help whenever you need it with our dedicated support team and comprehensive documentation.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="commands" class="commands">
+			<div class="container">
+				<h2 class="section-title">Commands</h2>
+				<div class="commands-grid">
+					<div class="command-card">
+						<div class="command-name">/language</div>
+						<div class="command-description">Changes the bot's language</div>
+					</div>
+					<div class="command-card">
+						<div class="command-name">/permissions</div>
+						<div class="command-description">Shows the permissions of a member</div>
+					</div>
+					<div class="command-card">
+						<div class="command-name">/steam</div>
+						<div class="command-description">Gives info on a game from Steam</div>
+					</div>
+					<div class="command-card">
+						<div class="command-name">/calculator</div>
+						<div class="command-description">Math expression evaluator!</div>
+					</div>
+					<div class="command-card">
+						<div class="command-name">/dictionary</div>
+						<div class="command-description">Shows the definiton and pronunciation of an English word</div>
+					</div>
+					<div class="command-card">
+						<div class="command-name">/urban</div>
+						<div class="command-description">Gets definitons from Urban Dictionary</div>
+					</div>
+					<div class="command-card">
+						<div class="command-name">/morse</div>
+						<div class="command-description">Morse code converter. Converts to or from mors code</div>
+					</div>
+					<div class="command-card">
+						<div class="command-name">/purge</div>
+						<div class="command-description">Deletes up to 100 (filterable) messages!</div>
+					</div>
+					<div class="command-card">
+						<div class="command-name">/ban</div>
+						<div class="command-description">Bans a member</div>
+					</div>
+					<div class="command-card">
+						<div class="command-name">/kick</div>
+						<div class="command-description">Kicks a member</div>
+					</div>
+					<div class="command-card">
+						<div class="command-name">/slowmode</div>
+						<div class="command-description">Enables slowmode in a channel</div>
+					</div>
+					<div class="command-card">
+						<div class="command-name">and more!</div>
+						<div class="command-description">30+ commands and features!</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="stats" class="stats">
+			<div class="container">
+				<div class="stats-grid">
+					<div class="stat-item">
+						<h3 id="server-count">0</h3>
+						<p>Active Servers</p>
+					</div>
+					<!-- <div class="stat-item">
+						<h3 id="user-count">0</h3>
+						<p>Users Served</p>
+					</div> -->
+					<div class="stat-item">
+						<h3 id="uptime-count">99.9%</h3>
+						<p>Uptime</p>
+					</div>
+					<div class="stat-item">
+						<h3 id="commands-count">50+</h3>
+						<p>Commands</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="invite" class="cta-section">
+			<div class="container">
+				<h2>Ready to Get Started?</h2>
+				<p>Add some cool features to your server with this bot, including moderation tools, games, music, and more.</p>
+				<a href="#" class="btn-primary glow-on-hover" onclick="inviteBot()"> <i class="fas fa-plus"></i> Add to Discord </a>
+			</div>
+		</section>
+
+		<footer id="support">
+			<div class="footer-content">
+				<div class="footer-section">
+					<h3>Curiosus</h3>
+					<p>A better Discord experience with easy-to-use moderation and utility commands.</p>
+					<div class="social-links">
+						<a href="https://discord.gg/ru4263XUdg"><i class="fab fa-discord"></i></a>
+						<!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+						<a href="https://github.com/qancurious"><i class="fab fa-github"></i></a>
+						<a href="https://www.youtube.com/@qancurious.developer"><i class="fab fa-youtube"></i></a>
+					</div>
+				</div>
+				<div class="footer-section">
+					<h3>Support</h3>
+					<p><a href="https://discord.gg/RzEA6TujPB">Help Center</a></p>
+					<p><a href="https://discord.gg/3ENgffNKBp">Bug Report</a></p>
+					<p><a href="https://discord.gg/hQ6HtevQnv">Feature Request</a></p>
+				</div>
+				<div class="footer-section">
+					<h3>Legal</h3>
+					<p><a href="terms.html">Terms of Service</a></p>
+					<p><a href="privacy.html">Privacy Policy</a></p>
+				</div>
+			</div>
+			<div style="text-align: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #2f3136">
+				<p>&copy; 2018-2025 Curiosus. All rights reserved.</p>
+
+				<!-- You are free to remove this credit line from the footer. However, keeping it is highly appreciated as a form of support for this work. -->
+				<p class="footer-credit">
+					Website Designed By
+					<a href="https://adityalf.is-a.dev/" target="_blank" rel="noopener noreferrer">Aditya</a>
+				</p>
+			</div>
+		</footer>
+
+		<script src="../scripts/main.js"></script>
+		<script src="../scripts/common.js"></script>
+	</body>
+</html>

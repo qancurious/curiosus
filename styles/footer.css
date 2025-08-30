@@ -1,0 +1,80 @@
+footer {
+    background: #202225;
+    color: #dcddde;
+    padding: 3rem 2rem;
+    text-align: center;
+    border-top: 1px solid #2f3136;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.footer-section h3 {
+    margin-bottom: 1rem;
+    color: #5865F2;
+}
+
+.footer-section p,
+.footer-section a {
+    color: #b9bbbe;
+    text-decoration: none;
+    line-height: 1.6;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #5865F2;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.social-links a {
+    color: #b9bbbe;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.social-links a:hover {
+    color: #5865F2;
+    transform: translateY(-3px);
+    text-shadow: 0 0 10px rgba(88, 101, 242, 0.5);
+}
+
+/* Styling untuk Kredit di Footer */
+.footer-credit {
+    margin-top: 1rem;
+    /* Memberi jarak dari baris copyright di atasnya */
+    font-size: 0.85em;
+    color: #b9bbbe;
+    /* Warna abu-abu yang lebih lembut */
+    letter-spacing: 0.1em;
+    /* Efek spasi antar huruf yang Anda inginkan */
+    text-transform: uppercase;
+    /* Membuat teks menjadi huruf kapital */
+}
+
+.footer-credit a {
+    color: #5865F2;
+    /* Menggunakan warna utama dari variabel CSS Anda */
+    text-decoration: none;
+    font-weight: bold;
+    /* Membuat nama Anda tebal */
+    transition: color 0.3s ease;
+}
+
+.footer-credit a:hover {
+    text-decoration: underline;
+    /* Garis bawah saat kursor di atasnya */
+}
